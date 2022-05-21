@@ -1,16 +1,15 @@
 import React from 'react';
 import "./sidebar.css"
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import ChatIcon from '@mui/icons-material/Chat';
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
-import { IconButton } from '@mui/material';
+import { IconButton, Avatar } from '@mui/material';
 
 export default function Sidebar() {
   return (
    <div className='sidebar'>
        <div className='sidebar-header'>
-          < AccountCircleIcon />
+          < Avatar src="https://pbs.twimg.com/profile_images/1521238952698601475/qIg6IES6_400x400.jpg" />
 
           <div className='sidebar-header-right'>
             <IconButton>
