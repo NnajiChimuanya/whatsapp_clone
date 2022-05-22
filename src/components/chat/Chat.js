@@ -26,6 +26,32 @@ export default function Chat() {
           
         </div>
       </div>  
+
+      <div className='chat-body'>
+        <p className='chat-message'>
+          <span className='chat-name'> Chimuanya </span>
+
+          This is the message
+
+          <span id='chat-timestamp'>
+            {new Date().toUTCString()}
+          </span>
+        </p>
+
+        <p className=' chat-message chat-reciever'>
+          <span className='chat-name'> Chimuanya </span>
+
+          This is the message
+
+          <span id='chat-timestamp'>
+            {new Date().toUTCString()}
+          </span>
+        </p>
+
+        
+      </div>
+
+
     </div>
   );
 }
