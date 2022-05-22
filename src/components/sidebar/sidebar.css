@@ -56,3 +56,8 @@
     overflow: scroll;
     flex: 1;
 }
+
+.sidebar-chats::-webkit-scrollbar {
+    display: none;
+  }
+  
