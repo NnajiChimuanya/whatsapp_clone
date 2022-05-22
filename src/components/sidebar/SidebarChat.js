@@ -2,6 +2,7 @@ import React from 'react';
 import "./sidebarchat.css"
 import { Avatar } from '@mui/material';
 
+
 export default function SidebarChat() {
   return (
       <div className='sidebar-chat'>

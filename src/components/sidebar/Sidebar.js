@@ -5,6 +5,8 @@ import ChatIcon from '@mui/icons-material/Chat';
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import { IconButton, Avatar } from '@mui/material';
 import SidebarChat from './SidebarChat';
+import SeearchIcon from '@mui/icons-material/Search'
+
 
 export default function Sidebar() {
   return (
@@ -29,7 +31,7 @@ export default function Sidebar() {
 
        <div className='sidebar-search'>
         <div className='sidebar-search-container'>
-        < MoreVertIcon />
+        < SeearchIcon />
           <input placeholder='search or start new chat' type="text"></input>
         </div>
        </div>
