@@ -8,7 +8,7 @@ import Login from "./components/login/Login";
 
 function App() {
   const [messages, setMessages] = useState([]);
-  const [loggeIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
     axios.get("/api/message/sync").then((response) => {
@@ -35,13 +35,15 @@ function App() {
   console.log(messages);
 
   return (
-    <div className="app">
-      {!loggeIn ? (
+    <div>
+      {!loggedIn ? (
         <Login />
       ) : (
-        <div className="app-body">
-          <Sidebar />
-          <Chat messages={messages} />
+        <div className="app">
+          <div className="app-body">
+            <Sidebar />
+            <Chat messages={messages} />
+          </div>
         </div>
       )}
     </div>
