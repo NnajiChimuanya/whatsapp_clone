@@ -4,7 +4,7 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import Pusher from "pusher-js";
 import axios from "./axios";
-import Login from "./Login";
+import Login from "./components/login/Login";
 
 function App() {
   const [messages, setMessages] = useState([]);
