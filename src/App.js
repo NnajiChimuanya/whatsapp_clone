@@ -4,9 +4,11 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import Pusher from "pusher-js";
 import axios from "./axios";
+import Login from "./components/login/Login";
 
 function App() {
   const [messages, setMessages] = useState([]);
+  const [loggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
     axios.get("/api/message/sync").then((response) => {
@@ -33,11 +35,17 @@ function App() {
   console.log(messages);
 
   return (
-    <div className="app">
-      <div className="app-body">
-        <Sidebar />
-        <Chat messages={messages} />
-      </div>
+    <div>
+      {!loggedIn ? (
+        <Login />
+      ) : (
+        <div className="app">
+          <div className="app-body">
+            <Sidebar />
+            <Chat messages={messages} />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
