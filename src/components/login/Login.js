@@ -9,7 +9,7 @@ const Login = () => {
           <img
             className="logo"
             src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png"
-            alt="whatsap ogo"
+            alt="whatsap logo"
           />
         </div>
 
@@ -18,7 +18,20 @@ const Login = () => {
         </div>
       </div>
 
-      <div className="login-details"></div>
+      <div className="login-details">
+        <div className="login-steps">
+          <div className="login-steps-head">
+            To use WhatsApp on your computer:
+          </div>
+          <div className="login-steps-steps">
+            <ol>
+              <li>Open WhatApp on your computer.</li>
+              <li>Have a gmail account.</li>
+              <li>Tap on the "Continue with gmail button"</li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
