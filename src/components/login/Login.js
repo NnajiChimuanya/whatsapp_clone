@@ -12,7 +12,13 @@ const Login = () => {
             alt="whatsap ogo"
           />
         </div>
+
+        <div className="header-name">
+          <p>WHATSAPP WEB</p>
+        </div>
       </div>
+
+      <div className="login-details"></div>
     </div>
   );
 };
