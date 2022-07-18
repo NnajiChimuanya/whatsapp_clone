@@ -56,3 +56,20 @@
 .login-steps-steps > ol > li {
   margin-bottom: 10px;
 }
+
+.login-button {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+Button {
+  text-transform: none !important;
+  border: none !important;
+  font-weight: 800 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+  background-color: #e1e2d8 !important;
+}

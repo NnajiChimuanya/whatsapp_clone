@@ -1,7 +1,14 @@
 import "./login.css";
 import React from "react";
+import { Button } from "@material-ui/core";
+// import {  MailOutline } from "@mui/icons-material";
+import ArrowForwardIos from "@mui/icons-material/ArrowBackIos";
 
 const Login = () => {
+  const handleLoginClick = () => {
+    console.log("Loggin in");
+  };
+
   return (
     <div className="login">
       <div className="header">
@@ -27,8 +34,13 @@ const Login = () => {
             <ol>
               <li>Open WhatApp on your computer.</li>
               <li>Have a gmail account.</li>
-              <li>Tap on the "Continue with gmail button"</li>
+              <li>Tap on the "Continue with Google" button</li>
             </ol>
+          </div>
+          <div className="login-button">
+            <Button fullWidth onClick={handleLoginClick}>
+              Continue with Google
+            </Button>
           </div>
         </div>
       </div>
