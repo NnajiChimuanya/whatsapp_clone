@@ -1,6 +1,7 @@
 .login {
   height: 100vh;
   margin: -10px;
+
   background-color: #dadbd3;
   align-items: center;
 }
@@ -29,7 +30,7 @@
 }
 
 .login-details {
-  height: 70vh;
+  height: 60vh;
   max-width: 550px;
   background-color: white;
   z-index: 100;
@@ -40,4 +41,35 @@
 
 .logo {
   height: 300px;
+}
+
+.login-steps {
+  padding: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.login-steps-head {
+  font-size: 25px;
+}
+
+.login-steps-steps > ol > li {
+  margin-bottom: 10px;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+Button {
+  text-transform: none !important;
+  border: none !important;
+  font-weight: 800 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+  background-color: #e1e2d8 !important;
 }
