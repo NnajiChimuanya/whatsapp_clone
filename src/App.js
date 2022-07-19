@@ -8,7 +8,7 @@ import Login from "./components/login/Login";
 
 function App() {
   const [messages, setMessages] = useState([]);
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
 
   useEffect(() => {
     axios.get("/api/message/sync").then((response) => {
